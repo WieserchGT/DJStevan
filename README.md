@@ -4,17 +4,17 @@
 
 ![logo](https://repository-images.githubusercontent.com/186841818/8aa95700-7730-11e9-84be-e80f28520325)
 
-# 🤖 EvoBot (Discord Music Bot)
-> EvoBot is a Discord Music Bot built with discord.js & uses Command Handler from [discordjs.guide](https://discordjs.guide)
+# 🤖 DJSteven (Bot de Discord de musica)
+> Steven es un Discord Music Bot construido con discord.js y usa Command Handler de [discordjs.guide](https://discordjs.guide)
 
 ## Requirements
 
 1. Discord Bot Token **[Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)**
 2. YouTube Data API v3 Key **[Guide](https://developers.google.com/youtube/v3/getting-started)**  
 2.1 **(Optional)** Soundcloud Client ID **[Guide](https://github.com/zackradisic/node-soundcloud-downloader#client-id)**
-3. Node.js v14.0.0 or newer
+3. Node.js v14.0.0 o nueva
 
-## 🚀 Getting Started
+## 🚀 Comenzando
 
 ```sh
 git clone https://github.com/eritislami/evobot.git
@@ -22,13 +22,13 @@ cd evobot
 npm install
 ```
 
-After installation finishes follow configuration instructions then run `node index.js` to start the bot.
+Una vez finalizada la instalación, siga las instrucciones de configuración y luego ejecute `node index.js` para iniciar el bot.
 
-## ⚙️ Configuration
+## ⚙️ Configuracion
 
-Copy or Rename `config.json.example` to `config.json` and fill out the values:
+Copy o Rename `config.json.example` to `config.json` y complete los valores:
 
-⚠️ **Note: Never commit or share your token or api keys publicly** ⚠️
+⚠️ **Note: Nunca comprometa ni comparta públicamente sus claves de token o API** ⚠️
 
 ```json
 {
@@ -44,27 +44,27 @@ Copy or Rename `config.json.example` to `config.json` and fill out the values:
 }
 ```
 
-## 🐬 Docker Configuration
+## 🐬 Docker Configuracion
 
-For those who would prefer to use our [Docker container](https://hub.docker.com/repository/docker/eritislami/evobot), you may provide values from `config.json` as environment variables.
+Para aquellos que prefieren usar nuestro [Docker container](https://hub.docker.com/repository/docker/eritislami/evobot), puede proporcionar valores de `config.json` como variables de entorno.
 
 ```shell
 docker run -e "TOKEN=<discord-token>" -e "YOUTUBE_API_KEY=<youtube-key>" eritislami/evobot
 ```
 
-## 📝 Features & Commands
+## 📝 Funciones y comandos
 
-> Note: The default prefix is '/'
+> Npta: El prefix por default es '/'
 
-* 🎶 Play music from YouTube via url
+* 🎶 Play music por YouTube via url
 
 `/play https://www.youtube.com/watch?v=GLvohMXgcBo`
 
-* 🔎 Play music from YouTube via search query
+* 🔎 Play music por YouTube via search query
 
 `/play under the bridge red hot chili peppers`
 
-* 🎶 Play music from Soundcloud via url
+* 🎶 Play music por Soundcloud via url
 
 `/play https://soundcloud.com/blackhorsebrigade/pearl-jam-alive`
 
@@ -72,8 +72,7 @@ docker run -e "TOKEN=<discord-token>" -e "YOUTUBE_API_KEY=<youtube-key>" eritisl
 
 `/search Pearl Jam`
 
-Reply with song number or numbers seperated by comma that you wish to play
-
+Responda con el número de la canción o los números separados por comas que desea reproducir
 Examples: `1` or `1,2,3`
 
 * 📃 Play youtube playlists via url
@@ -95,14 +94,14 @@ Examples: `1` or `1,2,3`
 * Skip to song # in queue (/skipto, /st)
 * Move a song in the queue (/move, /mv)
 * Remove song # from queue (/remove, /rm)
-* Play an mp3 clip (/clip song.mp3) (put the file in sounds folder)
+* Play an mp3 clip (/clip song.mp3) (poner el archivo en la carpeta de sonidos)
 * List all clips (/clips)
 * Show ping to Discord API (/ping)
 * Show bot uptime (/uptime)
 * Toggle pruning of bot messages (/pruning)
 * Help (/help, /h)
 * Command Handler from [discordjs.guide](https://discordjs.guide/)
-* Media Controls via Reactions
+* Controles de medios a través de reacciones
 
 ![reactions](https://i.imgur.com/9S7Omf9.png)
 
@@ -144,6 +143,6 @@ Currently available locales are:
 6. Push to the branch: `git push origin my-new-feature`
 7. Submit a pull request
 
-## 📝 Credits
+## 📝 Creditos
 
-[@iCrawl](https://github.com/iCrawl) For the queue system used in this application which was adapted from [@iCrawl/discord-music-bot](https://github.com/iCrawl/discord-music-bot)
+[@iCrawl](https://github.com/iCrawl) Para el sistema de colas utilizado en esta aplicación, que fue adaptado de [@iCrawl/discord-music-bot](https://github.com/iCrawl/discord-music-bot)
